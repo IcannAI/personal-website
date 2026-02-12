@@ -1,3 +1,3 @@
-# JavaScript Project: Building Your Personal Website
+# Personal Website
 
 ### [Guideline](https://www.theodinproject.com/lessons/getting-hired-building-your-personal-website)
