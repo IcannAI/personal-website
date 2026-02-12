@@ -1,6 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production';
 const repoName = 'personal-website'; // 改成你的 repo 名
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
@@ -10,3 +11,5 @@ const nextConfig = {
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
 };
+
+module.exports = nextConfig
