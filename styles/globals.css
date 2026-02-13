@@ -13,16 +13,25 @@
     --success: #34d399;
   }
 
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    min-height: 100vh;
-    font-feature-settings: "liga" 1, "calt" 1;
-  }
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga" 1, "calt" 1;
   }
 }
