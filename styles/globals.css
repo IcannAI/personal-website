@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #e5e5e5;
+    --muted: #a1a1aa;
+    --muted-foreground: #71717a;
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
+    --success: #34d399;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
